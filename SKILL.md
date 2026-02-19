@@ -1,8 +1,7 @@
-***
-
+---
 name: uploading-to-minio
 description: "Upload files to MinIO (S3-compatible) storage and return public URLs. Use when any skill needs to upload images or files to object storage. Trigger keywords: upload image, MinIO, 上傳圖片, 上傳檔案, object storage."
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 # Uploading to MinIO — 檔案上傳原子技能
 
