@@ -11,7 +11,7 @@ description: "Upload files to MinIO (S3-compatible) storage and return public UR
 
 ## 環境設定
 
-> **Doppler 配置**: `doppler run -p minio -c dev --`
+> **Doppler 配置**: `doppler run -p storage -c dev --`
 
 | 環境變數 | 說明 |
 |----------|------|
@@ -27,14 +27,14 @@ description: "Upload files to MinIO (S3-compatible) storage and return public UR
 
 ```bash
 # 上傳單張圖片
-doppler run -p minio -c dev -- python3 ~/skills/uploading-to-minio/scripts/upload_file.py image.png
+doppler run -p storage -c dev -- python3 ~/skills/uploading-to-minio/scripts/upload_file.py image.png
 
 # 上傳多張 + 指定前綴路徑
-doppler run -p minio -c dev -- python3 ~/skills/uploading-to-minio/scripts/upload_file.py \
+doppler run -p storage -c dev -- python3 ~/skills/uploading-to-minio/scripts/upload_file.py \
   screenshot1.png screenshot2.png --prefix "xiaohongshu/2026-02-19"
 
 # 指定 bucket
-doppler run -p minio -c dev -- python3 ~/skills/uploading-to-minio/scripts/upload_file.py \
+doppler run -p storage -c dev -- python3 ~/skills/uploading-to-minio/scripts/upload_file.py \
   photo.jpg --bucket my-bucket
 ```
 

@@ -12,8 +12,8 @@ upload_file.py — 上傳檔案到 MinIO (S3 相容)
   MINIO_SECURE     — 是否用 HTTPS (預設: false)
 
 用法:
-  doppler run -p minio -c dev -- python3 upload_file.py image1.png image2.jpg
-  doppler run -p minio -c dev -- python3 upload_file.py --prefix "xiaohongshu/2026-02-19" screenshot.png
+  doppler run -p storage -c dev -- python3 upload_file.py image1.png image2.jpg
+  doppler run -p storage -c dev -- python3 upload_file.py --prefix "xiaohongshu/2026-02-19" screenshot.png
 
 輸出 JSON:
   [{"file": "screenshot.png", "url": "http://192.168.31.105:9000/collections/...png"}]
